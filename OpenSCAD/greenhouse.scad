@@ -21,8 +21,8 @@ module frame(d=[400, 300, 200], braces=3, include_diagonal=false, include_siding
 }
 
 module roof(d=[400, 300, 200]){
-  translate([0,0,d.z]) rotate([-48.5,0,0]) frame(, include_siding=false);
-  translate(d) rotate([-48.5,0,180]) frame(, include_siding=false);
+  translate([0,0,d.z]) rotate([-48.5,0,0]) frame(include_siding=false);
+  translate(d) rotate([-48.5,0,180]) frame( include_siding=false);
   color ("green") translate([0, d.y/2-1.5, 200]) cube([5, 3, 130]);
   color ("green") translate([d.x-5, d.y/2-1.5, 200]) cube([5, 3, 130]);
 }
